@@ -1,7 +1,7 @@
 const submitButton = document.querySelector(".submit");
 if(localStorage.getItem('userData')!==null){
   alert("Already logged in!")
-  window.location.href = "https://RavitejaMulaparthi.github.io/F3-W2-Sept/sign-in-succesful.html";
+  window.location.href = "https://RavitejaMulaparthi.github.io/f3-w2-sept/sign-in-succesful.html";
 }
 submitButton.addEventListener("click", (event) => {
   const nameValue = document.getElementById("name").value;
@@ -27,7 +27,7 @@ submitButton.addEventListener("click", (event) => {
         token:token
     }
     localStorage.setItem("userData",JSON.stringify(userData))
-    window.location.href = "https://RavitejaMulaparthi.github.io/F3-W2-Sept/sign-in-succesful.html";
+    window.location.href = "https://ravitejamulaparthi.github.io/f3-w2-sept/sign-in-succesful.html";
   }
 });
 
